@@ -202,11 +202,11 @@
             <p style="text-align:center">
               <name>Shabari S Nair</name>
             </p>
-            <p> I am a Master's student studying Computer Science at the <a href="https://www.utexas.edu/">The University of Texas
+            <p> I am a Master's student studying Computer Science at the <a href="https://www.utexas.edu/">The University of Texas at
                 Austin</a>,
               where I am fortunate to be advised by <a href="https://caramanis.github.io/"> Prof. Constantine Caramanis</a>. Previously I completed my
                 Bachelor of Technology in Computer Science and Engineering at the <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (BHU), Varanasi</a>,
-                where I had the opportunity to work with <a href="https://www.iitbhu.ac.in/dept/cse/people/pratikcse">Pratik Chattopadhyay</a> and <a href="https://iitbhu.ac.in/dept/cse/people/kkshuklacse">Prof.Kaushal Kumar Shukla</a>.
+                where I had the opportunity to work with <a href="https://www.iitbhu.ac.in/dept/cse/people/pratikcse">Prof. Pratik Chattopadhyay</a> and <a href="https://iitbhu.ac.in/dept/cse/people/kkshuklacse">Prof. Kaushal Kumar Shukla</a>.
               </p>
 
             <p>I am currently working as a Graduate Research Assistant in collaboration with <a href="https://devrev.ai/">DevRev</a>. Prior to UT Austin,
@@ -249,10 +249,10 @@
         <tbody>
           <td>
             <ul>
-                <li><b>Jan 2025:</b> New preprint: Succeeding at Scale: Automated Dataset Construction and Query-Side Adaptation for Multi-Tenant Search!</li>
+                <li><b>Jan 2026:</b> New preprint: <a href="https://arxiv.org/abs/2601.04646">Succeeding at Scale: Automated Dataset Construction and Query-Side Adaptation for Multi-Tenant Search</a></li>
                 <li><b>Aug 2025:</b> Started GRA in collaboration with DevRev</li>
                 <li><b>Aug 2025:</b> Started Masters in Computer Science at UT Austin</li>
-                <li><b>Jul 2025:</b> Promoted to Senior Machine Learning Engineer!</li>
+                <li><b>Jul 2025:</b> Promoted to Senior Machine Learning Engineer</li>
                 <li><b>Apr 2025:</b> Presented at ICASSP'25 in Hyderabad, India</li>
                 <li><b>Dec 2024:</b> Presented at SLT'24 in Macau</li>
                 <li><b>Dec 2024:</b> Paper on confidence estimation in ASR accepted in ICASSP'25 </li>
@@ -282,60 +282,29 @@
         </tbody>
       </table>
 
-      <h3 class="section-sub">Discrete Diffusion</h3>
-
       <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/ancoder.png'>
+              <img src='images/succeedingatscale.png'>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2602.17688">
-                <papertitle>AnCoder: Anchored Code Generation via Discrete
-                  Diffusion Models</papertitle>
+              <a href="https://arxiv.org/abs/2601.04646">
+                <papertitle>Succeeding at Scale: Automated Dataset Construction and Query-Side Adaptation for Multi-Tenant Search</papertitle>
               </a>
               <br>
-              Anton Xue<sup>*</sup>, <strong>Litu Rout</strong><sup>*</sup>, Constantine Caramanis, and Sanjay
-              Shakkottai
+              Prateek Jain<sup>*</sup>, <strong>Shabari S Nair</strong><sup>*</sup>, Ritesh Goru, Prakhar Agarwal, Ajay Yadav, Yoga Sri Varshan Varadharajan, Constantine Caramanis
               <br>
               <em>Preprint</em>, 2026 &nbsp; <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
               <br>
-              <a href="https://arxiv.org/pdf/2602.17688">ArXiv</a>
-              <p>we introduce AnchorTree, a framework that explicitly anchors the diffusion process
-                using structured, hierarchical priors native to code. Specifically, AnchorTree uses the
-                abstract syntax tree to prioritize resolving syntactically and semantically salient tokens,
-                such as keywords (e.g., if, while) and identifiers (e.g., variable names), thereby establishing a
-                structural scaffold that guides the remaining generation. We validate this
-                framework via AnCoder, a family of models showing that structurally anchored diffusion
-                offers a parameter-efficient path to high-quality code generation.</p>
+              <a href="https://arxiv.org/abs/2601.04646">ArXiv</a>
+              <p>We introduce DevRev-Search, a passage retrieval benchmark for technical customer support built via a fully automated pipeline. Candidate generation uses fusion across diverse sparse and dense retrievers, followed by an LLM-as-a-Judge for consistency filtering and relevance labeling. We further propose an Index-Preserving Adaptation strategy that fine-tunes only the query encoder, achieving strong performance gains while keeping document indices fixed. Experiments on DevRev-Search, SciFact, and FiQA-2018 show that Parameter-Efficient Fine-Tuning (PEFT) of the query encoder delivers a remarkable quality-efficiency trade-off, enabling scalable and practical enterprise search adaptation.</p>
             </td>
           </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/entrgi.png'>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2602.05000">
-                <papertitle>EntrGI: Efficient Neural Posterior Sampling via Graphical Inference</papertitle>
-              </a>
-              <br>
-              Atula Tejaswi<sup>*</sup>, <strong>Litu Rout</strong><sup>*</sup>, Constantine Caramanis, Sanjay
-              Shakkottai, and Sujay Sanghavi
-              <br>
-              <em>Preprint</em>, 2026 &nbsp; <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
-              <br>
-              <a href="https://arxiv.org/pdf/2602.05000">ArXiv</a>
-              <p>Reward guidance has been applied to great success in the test-time adaptation of continuous diffusion
-                models; it updates each denoising step using the gradients from a downstream reward model. We study
-                reward guidance for discretediffusion language models, where one cannot differentiate
-                through the natural outputs of the model because they are discrete tokens. To address this issue, we
-                introduce EntrGI: Entropy Aware Reward Guidance that dynamically regulates the gradients from the reward
-                model.</p>
-            </td>
-          </tr>
-          <tr style="background-color: #ffffd0; box-shadow: 0 0 20px rgba(0,0,0,0.05);">
+        </tbody>
+      </table>
+          <!-- <tr style="background-color: #ffffd0; box-shadow: 0 0 20px rgba(0,0,0,0.05);">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src='images/aps.png'>
             </td>
@@ -362,7 +331,7 @@
                 during inference. Our method supports a variety of linear and nonlinear image restoration tasks, as well
                 as mask-based garment styling and reference-guided style transfer.</p>
             </td>
-          </tr>
+          </tr> -->
           <tr style="background-color: #ffffd0; box-shadow: 0 0 20px rgba(0,0,0,0.05);">
             <td
               style="padding:20px;width:25%;vertical-align:middle; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
@@ -370,14 +339,14 @@
             </td>
             <td
               style="padding:20px;width:75%;vertical-align:middle; border-top-right-radius: 12px; border-bottom-right-radius: 12px;">
-              <span class="new-badge" style="background-color: #ff5252; color: white;">NeurIPS</span> &nbsp;
+              <span class="new-badge" style="background-color: #ff5252; color: white;">ICASSP</span> &nbsp;
               <a href="https://anchored-diffusion-llm.github.io/data/adlm.pdf">
                 <papertitle>Anchored Diffusion Language Model</papertitle>
               </a>
               <br>
               <strong>Litu Rout</strong>, Constantine Caramanis, and Sanjay Shakkottai
               <br>
-              <em>NeurIPS</em>, 2025
+              <em>ICASSP</em>, 2025
               <br>
               <a href="https://anchored-diffusion-llm.github.io/">Project Page</a> &nbsp;
               <a href="https://anchored-diffusion-llm.github.io/data/adlm.pdf">PDF</a> &nbsp;
@@ -392,12 +361,40 @@
                 likelihoods of missing tokens conditioned on the anchored predictions.</p>
             </td>
           </tr>
-        </tbody>
-      </table>
 
-      <h3 class="section-sub">Continuous Diffusion & Rectified Flows</h3>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/stsl.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://stsl-inverse-edit.github.io/assets/stsl-inverse-edit-preprint.pdf">
+                <papertitle>Beyond First-order Tweedie: Solving Inverse Problems using Latent Diffusion</papertitle>
+              </a>
+              <br>
+              <strong>Litu Rout</strong>, Yujia Chen, Abhishek Kumar, Constantine Caramanis, Sanjay Shakkottai, and
+              Wen-Sheng Chu
+              <br>
+              <em>CVPR</em>, 2024
+              <br>
+              <a href="https://stsl-inverse-edit.github.io/">Project Page</a> &nbsp;
+              <a href="data/stsl_camera_ready_cvpr24.pdf">PDF</a> &nbsp;
+              <a href="https://arxiv.org/abs/2312.00852">ArXiv</a> &nbsp;
+              <a href="https://github.com/LituRout/stsl-inverse-edit">Code</a>
+              <img class="github-badge"
+                src="https://img.shields.io/github/stars/LituRout/stsl-inverse-edit?style=social" alt="GitHub stars">
+              <p>We present an efficient second-order approximation using Tweedie's formula to mitigate the bias
+                incurred in the widely used first-order samplers. With this method, we devise a surrogate loss function
+                to refine the reverse process at every diffusion step to address inverse problems and perform
+                high-fidelity text-guided image editing.</p>
+            </td>
+          </tr>
 
-      <table class="pub-table"
+
+
+
+        
+
+      <!-- <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
@@ -642,8 +639,6 @@
         </tbody>
       </table>
 
-      <h3 class="section-sub">Optimal Transport</h3>
-
       <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -726,7 +721,6 @@
         </tbody>
       </table>
 
-      <h3 class="section-sub">Generative Adversarial Networks</h3>
 
       <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -847,8 +841,6 @@
         </tbody>
       </table>
 
-      <h3 class="section-sub">Satellite Image Processing</h3>
-
       <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -899,8 +891,6 @@
           </tr>
         </tbody>
       </table>
-
-      <h3 class="section-sub">Visual Object Tracking</h3>
 
       <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -1042,7 +1032,6 @@
         </tbody>
       </table>
 
-      <h3 class="section-sub">Patent</h3>
       <table class="pub-table"
         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -1108,71 +1097,12 @@
             </td>
           </tr>
         </tbody>
-      </table>
-      <!-- Invited Talks
-      <h3 class="section-sub">Invited Talks</h3>
-      <table class="pub-table"
-        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div style="position:relative; width:100%; cursor:pointer;">
-                <a href="https://www.youtube.com/watch?v=ujIGDOmIlas">
-                  <img src="https://img.youtube.com/vi/ujIGDOmIlas/mqdefault.jpg"
-                    style="width:100%; border-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,0.1);">
-                  <div
-                    style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:white; font-size:40px; opacity:0.9; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                    <i class="fas fa-play-circle"></i>
-                  </div>
-                </a>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.youtube.com/watch?v=ujIGDOmIlas&t=0s">
-                <papertitle>Guest Lecture: Foundations and Advances in Diffusion Models</papertitle>
-              </a>
-              <br>
-              <strong>Litu Rout</strong>
-              <br>
-              <em>EE 381V: Diffusion Models for Generative AI, UT Austin</em>
-              <br>
-              (Course Instructor: <a href="https://sites.google.com/view/sanjay-shakkottai/home">Prof. Sanjay
-                Shakkottai</a>)
-              <br>
-              <a href="https://www.youtube.com/watch?v=ujIGDOmIlas&t=0s">Watch Video</a>
-              <p>I delivered a guest lecture in this advanced graduate course, covering the theoretical foundations of
-                diffusion models, score-based generative modeling, and their applications in inverse problems.</p>
-            </td>
-          </tr>
-        </tbody>
       </table> -->
 
     </div>
-    <div id="service" style="margin-top:40px; margin-bottom:60px;">
-      <h3 class="section-sub">Reviewer & Program Committee Member</h3>
-      <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate;">
-        <tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
-                <li><b>NeurIPS</b><span style="float:right;">2022, 2023, 2024, 2025</span></li>
-                <li><b>ICLR</b><span style="float:right;">2022, 2023, 2024, 2025, 2026</span></li>
-                <li><b>ICML</b><span style="float:right;">2022, 2023, 2024, 2025</span></li>
-                <li><b>CVPR</b><span style="float:right;">2024, 2025</span></li>
-                <li><b>AAAI</b><span style="float:right;">2022, 2023, 2024, 2025, 2026</span></li>
-                <li><b>SIGGRAPH</b><span style="float:right;">2025</span></li>
-                <li><b>IEEE Transactions on AI</b><span style="float:right;">2025</span></li>
-                <li><b>Journal of Machine Learning Research</b><span style="float:right;">2024</span></li>
-                <li><b>IEEE Transactions on Medical Imaging</b><span style="float:right;">2024</span></li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
     <div class="footer">
-      <p>&copy; 2025 Litu Rout. Template adapted from <a href="https://github.com/jonbarron/website">Website.</a></p>
+      <p>&copy; 2025 Shabari S Nair. Template adapted from <a href="https://liturout.github.io/">Website.</a></p>
     </div>
 
   </div>
