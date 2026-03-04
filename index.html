@@ -332,62 +332,230 @@
                 as mask-based garment styling and reference-guided style transfer.</p>
             </td>
           </tr> -->
-          <tr style="background-color: #ffffd0; box-shadow: 0 0 20px rgba(0,0,0,0.05);">
-            <td
-              style="padding:20px;width:25%;vertical-align:middle; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
-              <img src='images/adlm.png'>
-            </td>
-            <td
-              style="padding:20px;width:75%;vertical-align:middle; border-top-right-radius: 12px; border-bottom-right-radius: 12px;">
-              <span class="new-badge" style="background-color: #ff5252; color: white;">ICASSP</span> &nbsp;
-              <a href="https://anchored-diffusion-llm.github.io/data/adlm.pdf">
-                <papertitle>Anchored Diffusion Language Model</papertitle>
-              </a>
-              <br>
-              <strong>Litu Rout</strong>, Constantine Caramanis, and Sanjay Shakkottai
-              <br>
-              <em>ICASSP</em>, 2025
-              <br>
-              <a href="https://anchored-diffusion-llm.github.io/">Project Page</a> &nbsp;
-              <a href="https://anchored-diffusion-llm.github.io/data/adlm.pdf">PDF</a> &nbsp;
-              <a href="https://arxiv.org/pdf/2505.18456">ArXiv</a> &nbsp;
-              <a href="https://github.com/LituRout/ADLM">Code</a>
-              <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
-                alt="GitHub stars">
-              <p>Diffusion Language Models (DLMs) promise parallel generation and bidirectional context, yet they
-                underperform autoregressive (AR) models in both likelihood modeling and generated text quality. We
-                address this issue by introducing Anchored Diffusion Language Model (ADLM), a novel two-stage framework
-                that first predicts distributions over important tokens via an anchor network, and then predicts the
-                likelihoods of missing tokens conditioned on the anchored predictions.</p>
-            </td>
-          </tr>
-
+          <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/stsl.png'>
+              <img src='images/confidence.png'>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://stsl-inverse-edit.github.io/assets/stsl-inverse-edit-preprint.pdf">
-                <papertitle>Beyond First-order Tweedie: Solving Inverse Problems using Latent Diffusion</papertitle>
+            <td style="padding:20px;width:75%;vertical-align:middle"></td>
+              <span class="new-badge" style="background-color: #ff5252; color: white;">ICASSP</span> &nbsp;
+              <a href="https://arxiv.org/abs/2502.13446">
+                <papertitle>Adopting Whisper for Confidence Estimation</papertitle>
               </a>
               <br>
-              <strong>Litu Rout</strong>, Yujia Chen, Abhishek Kumar, Constantine Caramanis, Sanjay Shakkottai, and
-              Wen-Sheng Chu
+              Vaibhav Aggarwal<sup>*</sup>, <strong>Shabari S Nair</strong><sup>*</sup>, Yash Verma, Yash Jogi, Ajay Yadav
               <br>
-              <em>CVPR</em>, 2024
+              <em>ICASSP</em>, 2025 &nbsp; <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
               <br>
-              <a href="https://stsl-inverse-edit.github.io/">Project Page</a> &nbsp;
-              <a href="data/stsl_camera_ready_cvpr24.pdf">PDF</a> &nbsp;
-              <a href="https://arxiv.org/abs/2312.00852">ArXiv</a> &nbsp;
-              <a href="https://github.com/LituRout/stsl-inverse-edit">Code</a>
-              <img class="github-badge"
-                src="https://img.shields.io/github/stars/LituRout/stsl-inverse-edit?style=social" alt="GitHub stars">
-              <p>We present an efficient second-order approximation using Tweedie's formula to mitigate the bias
-                incurred in the widely used first-order samplers. With this method, we devise a surrogate loss function
-                to refine the reverse process at every diffusion step to address inverse problems and perform
-                high-fidelity text-guided image editing.</p>
+              <!-- <a href="https://anchored-diffusion-llm.github.io/">Project Page</a> &nbsp; -->
+              <a href="https://arxiv.org/abs/2502.13446">Arxiv</a> &nbsp;
+              <!-- <a href="https://arxiv.org/pdf/2505.18456">ArXiv</a> &nbsp; -->
+              <!-- <a href="https://github.com/LituRout/ADLM">Code</a> -->
+              <!-- <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
+                alt="GitHub stars"> -->
+              <p>We propose a novel end-to-end approach that leverages the ASR model itself (Whisper) to generate word-level confidence scores. Specifically, we introduce a method in which the Whisper model is fine-tuned to produce scalar confidence scores given an audio input and its corresponding hypothesis transcript. Our experiments demonstrate that the fine-tuned Whisper-tiny model, comparable in size to a strong CEM baseline, achieves similar performance on the in-domain dataset and surpasses the CEM baseline on eight out-of-domain datasets, whereas the fine-tuned Whisper-large model consistently outperforms the CEM baseline by a substantial margin across all datasets</p>
             </td>
           </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+      style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/contextual.png'>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle"></td>
+            <span class="new-badge" style="background-color: #ff5252; color: white;">SLT</span> &nbsp;
+            <a href="https://arxiv.org/abs/2502.11572">
+              <papertitle></papertitle>
+            </a>
+            <br>
+            Yash Jogi<sup>*</sup>, Vaibhav Aggarwal<sup>*</sup>, <strong>Shabari S Nair</strong>, Yash Verma, Aayush Kubba
+            <br>
+            <em>SLT</em>, 2024 &nbsp; <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
+            <br>
+            <!-- <a href="https://anchored-diffusion-llm.github.io/">Project Page</a> &nbsp; -->
+            <a href="https://arxiv.org/abs/2502.11572">Arxiv</a> &nbsp;
+            <!-- <a href="https://arxiv.org/pdf/2505.18456">ArXiv</a> &nbsp; -->
+            <!-- <a href="https://github.com/LituRout/ADLM">Code</a> -->
+            <!-- <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
+              alt="GitHub stars"> -->
+            <p>Whisper, despite being trained on 680K hours of web-scaled
+              audio data, faces difficulty in recognizing rare words like
+              domain-specific terms, with a solution being contextual biasing through prompting. To improve upon this method, in this
+              paper, we propose a supervised learning strategy to fine-tune
+              Whisper for contextual biasing instruction. We demonstrate
+              that by using only 670 hours of Common Voice English set
+              for fine-tuning, our model generalizes to 11 diverse opensource English datasets, achieving a 45.6% improvement in
+              recognition of rare words and 60.8% improvement in recognition of words unseen during fine-tuning over the baseline
+              method. Surprisingly, our model’s contextual biasing ability
+              generalizes even to languages unseen during fine-tuning.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="pub-table"
+      style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/bib.png'>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle"></td>
+            <span class="new-badge" style="background-color: #ff5252; color: white;">BIB</span> &nbsp;
+            <a href="https://academic.oup.com/bib/article/24/1/bbac506/6868524?guestAccessKey=">
+              <papertitle></papertitle>
+            </a>
+            <br>
+            Vandana Bharti<sup>*</sup>, <strong>Shabari S Nair</strong><sup>*</sup>, Akshat Jain, Kaushal Kumar Shukla, Bhaskar Biswas
+            <br>
+            <em>Briefings in Bioinformatics</em>, 2023 &nbsp; <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
+            <br>
+            <!-- <a href="https://anchored-diffusion-llm.github.io/">Project Page</a> &nbsp; -->
+            <a href="https://academic.oup.com/bib/article/24/1/bbac506/6868524?guestAccessKey=">Journal</a> &nbsp;
+            <!-- <a href="https://arxiv.org/pdf/2505.18456">ArXiv</a> &nbsp; -->
+            <!-- <a href="https://github.com/LituRout/ADLM">Code</a> -->
+            <!-- <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
+              alt="GitHub stars"> -->
+            <p>This paper applied the discriminative subgraph-based drift detector (DSDD) to graph streams generated from real-world toxicology datasets. We used four toxicology datasets, each of which yielded two graph streams – one with abrupt drift points and one with gradual drift points. We used DSDD both with the standard minimum description length (MDL) heuristic and after replacing MDL with a much simpler heuristic SIZE (number of vertices + number of edges), and applied it to all generated graph streams containing abrupt drift points and gradual drift points for varying window sizes. Following that, we compared and analyzed the results. Finally, we applied a long short-term memory based graph stream classification model to all the generated streams and compared the difference in the performances obtained with and without detecting drift using DSDD. We believe that the results and analysis presented in this paper will provide insight into the task of concept drift detection in the toxicology domain and aid in the application of DSDD in a variety of scenarios</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    </div>
+
+
+
+
+
+
+
+    <div id="projects" style="padding-top:20px;">
+      <table
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="width:100%;vertical-align:middle">
+              <heading>Other Projects</heading>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/har.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://drive.google.com/file/d/1QLi5OFSOSoFQ9WgZ8DZNMVC5KqF1HPhD/view">
+                <papertitle>Optimizing Activity Recognition in Videos using Key Frame Extraction</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong>
+              <br>
+              <em>BTech Thesis</em>
+              <br>
+              <a href="https://drive.google.com/file/d/1QLi5OFSOSoFQ9WgZ8DZNMVC5KqF1HPhD/view">PDF</a>
+              <p>This report focuses on the use and importance
+                of key frame extraction in the task of video recognition. As part of this work, firstly I propose
+                a key frame extraction technique based on clustering, which is then evaluated on activity
+                recognition models to prove its effectiveness. Following this, I propose a new individual
+                person activity recognition pipeline for surveillance systems, whose effectiveness is proved
+                by evaluating it on two datasets - a subset of UCF101, and a custom dataset collected using
+                the CCTV camera in the CSE department of IIT BHU.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/diffusion.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://usualitylabs.com/phantom-video/">
+                <papertitle>Diffusion-Based Procedural Video Generation for Instructional Videos</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong><sup>*</sup>, Krishanu Saini<sup>*</sup>, Agrim Jain<sup>*</sup>
+              <br>
+              <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
+              <br>
+              <a href="https://usualitylabs.com/phantom-video/static/docs/VR_Project_Report.pdf">Paper</a> &nbsp;
+              <a href="https://usualitylabs.com/phantom-video/">Project Page</a> &nbsp;
+              <a href="https://usualitylabs.com/phantom-video/static/docs/VR_Presentation.pdf">Slides</a> &nbsp;
+              <a href="https://github.com/krishanu-2001/Phantom-video-xl">Code</a>
+             
+              <p>In this work, we propose a novel approach that combines fine-tuned video diffusion models with a memory-based inference pipeline to generate procedural cooking videos. We also design new metrics to evaluate the consistency and quality of such generated clips.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/snake.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/m-e-l-u-h-a-n/snake-game-ai/tree/main">
+                <papertitle>Intelligent Snake Game Bot using Genetic Algorithm and Reinforcement Learning</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong><sup>*</sup>, Akshat Jain<sup>*</sup>, Purushottam Tiwari<sup>*</sup>
+              <br>
+              <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
+              <br>
+              <a href="https://drive.google.com/file/d/1HC5QNDF1bVYHdj9ByuytLtS93hesuwuD/view?usp=sharing">Slides</a> &nbsp;
+              <a href="https://github.com/m-e-l-u-h-a-n/snake-game-ai/tree/main">Code</a>
+             
+              <p>Trained human-level competent agents for the classical snake game using Deep Q Learning and Genetic Algorithm, with Pygame based UI for continuous visualization and monitoring of the agent during training</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/snake.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/m-e-l-u-h-a-n/snake-game-ai/tree/main">
+                <papertitle>Intelligent Snake Game Bot using Genetic Algorithm and Reinforcement Learning</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong><sup>*</sup>, Akshat Jain<sup>*</sup>, Purushottam Tiwari<sup>*</sup>
+              <br>
+              <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
+              <br>
+              <a href="https://drive.google.com/file/d/1HC5QNDF1bVYHdj9ByuytLtS93hesuwuD/view?usp=sharing">Slides</a> &nbsp;
+              <a href="https://github.com/m-e-l-u-h-a-n/snake-game-ai/tree/main">Code</a>
+             
+              <p>Trained human-level competent agents for the classical snake game using Deep Q Learning and Genetic Algorithm, with Pygame based UI for continuous visualization and monitoring of the agent during training</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+         
+
+    </div>
 
 
 
@@ -1099,7 +1267,7 @@
         </tbody>
       </table> -->
 
-    </div>
+
 
     <div class="footer">
       <p>&copy; 2025 Shabari S Nair. Template adapted from <a href="https://liturout.github.io/">Website.</a></p>
