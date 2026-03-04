@@ -189,7 +189,7 @@
   <div class="navbar">
     <a href="#home">Home</a>
     <a href="#updates">Updates</a>
-    <a href="#publications">Research</a>
+    <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
   </div>
 
@@ -222,7 +222,6 @@
               <a href="https://scholar.google.com/citations?user=PckwVCAAAAAJ&hl=en"
                 title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
               <a href="https://www.linkedin.com/in/shabarisnair/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://x.com/litu_rout_" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
               <a href="https://github.com/shabarisnair" title="GitHub"><i class="fab fa-github"></i></a>
             </p>
           </td>
@@ -299,7 +298,7 @@
               <em>Preprint</em>, 2026 &nbsp; <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
               <br>
               <a href="https://arxiv.org/abs/2601.04646">ArXiv</a>
-              <p>We introduce DevRev-Search, a passage retrieval benchmark for technical customer support built via a fully automated pipeline. Candidate generation uses fusion across diverse sparse and dense retrievers, followed by an LLM-as-a-Judge for consistency filtering and relevance labeling. We further propose an Index-Preserving Adaptation strategy that fine-tunes only the query encoder, achieving strong performance gains while keeping document indices fixed. Experiments on DevRev-Search, SciFact, and FiQA-2018 show that Parameter-Efficient Fine-Tuning (PEFT) of the query encoder delivers a remarkable quality-efficiency trade-off, enabling scalable and practical enterprise search adaptation.</p>
+              <p>DevRev-Search is a technical customer support passage retrieval benchmark built using a fully automated pipeline that combines diverse sparse and dense retrievers with LLM-based consistency filtering and relevance labeling. The work introduces an Index-Preserving Adaptation strategy that fine-tunes only the query encoder, keeping document indices fixed while improving retrieval performance. Experiments across DevRev-Search, SciFact, and FiQA-2018 show that parameter-efficient fine-tuning (PEFT) achieves strong performance gains with high efficiency, making it practical for scalable enterprise search adaptation.</p>
             </td>
           </tr>
         </tbody>
@@ -355,7 +354,7 @@
               <!-- <a href="https://github.com/LituRout/ADLM">Code</a> -->
               <!-- <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
                 alt="GitHub stars"> -->
-              <p>We propose a novel end-to-end approach that leverages the ASR model itself (Whisper) to generate word-level confidence scores. Specifically, we introduce a method in which the Whisper model is fine-tuned to produce scalar confidence scores given an audio input and its corresponding hypothesis transcript. Our experiments demonstrate that the fine-tuned Whisper-tiny model, comparable in size to a strong CEM baseline, achieves similar performance on the in-domain dataset and surpasses the CEM baseline on eight out-of-domain datasets, whereas the fine-tuned Whisper-large model consistently outperforms the CEM baseline by a substantial margin across all datasets</p>
+              <p>We propose an end-to-end method that leverages the ASR model itself (Whisper) to generate word-level confidence scores by fine-tuning it to predict scalar confidence values from audio and its corresponding transcript. The fine-tuned Whisper-tiny model matches a strong CEM baseline in-domain and outperforms it on most out-of-domain datasets, while the fine-tuned Whisper-large model consistently achieves substantial gains across all datasets.</p>
             </td>
           </tr>
         </tbody>
@@ -384,16 +383,7 @@
             <!-- <a href="https://github.com/LituRout/ADLM">Code</a> -->
             <!-- <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
               alt="GitHub stars"> -->
-            <p>Whisper, despite being trained on 680K hours of web-scaled
-              audio data, faces difficulty in recognizing rare words like
-              domain-specific terms, with a solution being contextual biasing through prompting. To improve upon this method, in this
-              paper, we propose a supervised learning strategy to fine-tune
-              Whisper for contextual biasing instruction. We demonstrate
-              that by using only 670 hours of Common Voice English set
-              for fine-tuning, our model generalizes to 11 diverse opensource English datasets, achieving a 45.6% improvement in
-              recognition of rare words and 60.8% improvement in recognition of words unseen during fine-tuning over the baseline
-              method. Surprisingly, our model’s contextual biasing ability
-              generalizes even to languages unseen during fine-tuning.</p>
+            <p>Although Whisper is trained on 680K hours of web-scale audio, it struggles with rare and domain-specific terms, typically addressed through prompting-based contextual biasing. We propose a supervised fine-tuning strategy that teaches Whisper explicit contextual biasing instructions, using only 670 hours of Common Voice English data. The resulting model generalizes across 11 diverse English datasets, achieving large gains in rare and unseen word recognition, and surprisingly extends its contextual biasing ability to languages not seen during fine-tuning.</p>
           </td>
         </tr>
       </tbody>
@@ -422,7 +412,7 @@
             <!-- <a href="https://github.com/LituRout/ADLM">Code</a> -->
             <!-- <img class="github-badge" src="https://img.shields.io/github/stars/LituRout/ADLM?style=social"
               alt="GitHub stars"> -->
-            <p>This paper applied the discriminative subgraph-based drift detector (DSDD) to graph streams generated from real-world toxicology datasets. We used four toxicology datasets, each of which yielded two graph streams – one with abrupt drift points and one with gradual drift points. We used DSDD both with the standard minimum description length (MDL) heuristic and after replacing MDL with a much simpler heuristic SIZE (number of vertices + number of edges), and applied it to all generated graph streams containing abrupt drift points and gradual drift points for varying window sizes. Following that, we compared and analyzed the results. Finally, we applied a long short-term memory based graph stream classification model to all the generated streams and compared the difference in the performances obtained with and without detecting drift using DSDD. We believe that the results and analysis presented in this paper will provide insight into the task of concept drift detection in the toxicology domain and aid in the application of DSDD in a variety of scenarios</p>
+            <p>This paper evaluates the Discriminative Subgraph-Based Drift Detector (DSDD) on graph streams derived from real-world toxicology datasets, including both abrupt and gradual drift scenarios. We compare the standard MDL heuristic with a simpler SIZE-based heuristic across varying window sizes, and analyze their effectiveness in drift detection. Additionally, we assess the impact of incorporating DSDD on downstream performance using an LSTM-based graph stream classifier, providing insights into concept drift detection in toxicology applications</p>
           </td>
         </tr>
       </tbody>
@@ -465,13 +455,7 @@
               <em>BTech Thesis</em>
               <br>
               <a href="https://drive.google.com/file/d/1QLi5OFSOSoFQ9WgZ8DZNMVC5KqF1HPhD/view">PDF</a>
-              <p>This report focuses on the use and importance
-                of key frame extraction in the task of video recognition. As part of this work, firstly I propose
-                a key frame extraction technique based on clustering, which is then evaluated on activity
-                recognition models to prove its effectiveness. Following this, I propose a new individual
-                person activity recognition pipeline for surveillance systems, whose effectiveness is proved
-                by evaluating it on two datasets - a subset of UCF101, and a custom dataset collected using
-                the CCTV camera in the CSE department of IIT BHU.</p>
+              <p>This report investigates the role of key frame extraction in video activity recognition, proposing a clustering-based method and demonstrating its effectiveness through extensive experiments. It further introduces an individual person activity recognition pipeline tailored for surveillance systems. The approach is validated on a subset of UCF101 and a custom CCTV dataset collected at IIT BHU.</p>
             </td>
           </tr>
         </tbody>
@@ -534,21 +518,87 @@
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/snake.png'>
+              <img src='images/pixelate.png'>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/m-e-l-u-h-a-n/snake-game-ai/tree/main">
-                <papertitle>Intelligent Snake Game Bot using Genetic Algorithm and Reinforcement Learning</papertitle>
+              <a href="https://github.com/milind-prajapat/Pixelate">
+                <papertitle>Autonomous Bot Simulation Using Image Processing and A* Algorithm (Pixelate’22 @IITBHU)</papertitle>
               </a>
               <br>
-              <strong>Shabari S Nair</strong><sup>*</sup>, Akshat Jain<sup>*</sup>, Purushottam Tiwari<sup>*</sup>
+              Milind Prajapat<sup>*</sup>, Megha Garg<sup>*</sup>,<strong>Shabari S Nair</strong><sup>*</sup>
               <br>
               <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
               <br>
-              <a href="https://drive.google.com/file/d/1HC5QNDF1bVYHdj9ByuytLtS93hesuwuD/view?usp=sharing">Slides</a> &nbsp;
-              <a href="https://github.com/m-e-l-u-h-a-n/snake-game-ai/tree/main">Code</a>
+              <a href="https://github.com/milind-prajapat/Pixelate">Code</a>
              
-              <p>Trained human-level competent agents for the classical snake game using Deep Q Learning and Genetic Algorithm, with Pygame based UI for continuous visualization and monitoring of the agent during training</p>
+              <p>Built an autonomous bot simulation for finding the shortest path in a complicated environment from a live video feed. Used A* algorithm to determine the shortest path, OpenCV for image processing, and PyBullet for physics simulation</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/graph.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/shabarisnair/graph-search-algorithms">
+                <papertitle>Graph Search Algorithms Visualizer</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong>
+              <br>
+              <a href="https://github.com/shabarisnair/graph-search-algorithms">Code</a>
+             
+              <p>Interactive tool using Pygame to visualize the working of various graph search algorithms. Supports Depth-first, Breadth-first, Dijikastra, and A* algorithms</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/bakery.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/shabarisnair/Appu-Cakes-E-Commerce-Website?tab=readme-ov-file">
+                <papertitle>E-Commerce Webapp for a Bakery</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong>
+              <br>
+              <a href="https://github.com/shabarisnair/Appu-Cakes-E-Commerce-Website?tab=readme-ov-file">Code</a>
+             
+              <p>Developed a full stack e-commerce web app using Spring Boot and MySQL and hosted the same on Heroku. Implemented features such as smart searching, blogging, order placement and tracking</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="pub-table"
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/doctor.png'>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/akshatjai258/Doctor-Consultation-App">
+                <papertitle>AI-Enabled Doctor Consultation Platform</papertitle>
+              </a>
+              <br>
+              <strong>Shabari S Nair</strong><sup>*</sup>, Akshat Jain<sup>*</sup>, Sacchit D Sheth<sup>*</sup>,Hitesh Jindal<sup>*</sup>
+              <br>
+              <span style="font-size:0.9em; color:#666;">* Equal contribution</span>
+              <br>
+              <a href="https://github.com/akshatjai258/Doctor-Consultation-App">Code</a>
+              <p>Built an online platform for connecting patients with nearby doctors of their choice based on specialty, proximity etc. Provided AI-enabled disease diagnosis based on user-input symptoms using the Naive Bayes model</p>
             </td>
           </tr>
         </tbody>
